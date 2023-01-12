@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Kalam", sans-serif;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 80px;
+  gap: 20px;
+  padding: 100px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url(https://img.freepik.com/free-photo/granite-texture_1160-692.jpg?w=1060&t=st=1673540365~exp=1673540965~hmac=1cb28835de6ca0f2d599247e0f579d5bdac6617e48957d1a14fd695236b92052);
+}
+
+.to_do_list {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  object-fit: contain;
+  background-image: url(./assets/img/post-it.png);
+}
