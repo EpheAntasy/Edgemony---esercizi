@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Signika Negative", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(180deg, rgb(78, 78, 78) 0%, rgb(28, 29, 29) 100%);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.oval {
+  z-index: -1;
+  position: absolute;
+  margin-top: 150px;
+  height: 600px;
+  width: 400px;
+  background-color: #555;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 90%;
+  background: linear-gradient(
+    180deg,
+    rgba(212, 220, 227, 1) 0%,
+    rgba(140, 163, 93, 1) 76%,
+    rgba(53, 62, 51, 1) 100%
+  );
+}
+
+.card__container {
+  margin-top: 50px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__img {
+  width: 300px;
+  height: 400px;
+  border-radius: 6px;
+  object-fit: cover;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 90%;
+}
+
+.btns__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #353e33;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px grey;
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: #51694c;
+}
+
+h2 {
+  margin: 5px;
+  font-size: 2rem;
+}
