@@ -1,0 +1,10 @@
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
