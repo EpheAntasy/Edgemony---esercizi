@@ -27,9 +27,24 @@ body {
 .home__btn {
   height: 32px;
   padding: 0 5px;
-  border: none;
   border-radius: 5px;
-  border: 0.1px solid rgba(0, 0, 0, 0.185);
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #666666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form__btn:hover,
+.home__btn:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.form__btn:active .home__btn:active {
+  position: relative;
+  top: 1px;
 }
 
 .form__btn a,
@@ -55,7 +70,6 @@ body {
   background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
   background-color: #f9f9f9;
   border: 1px solid #dcdcdc;
-
   cursor: pointer;
   color: #666666;
   font-weight: bold;
