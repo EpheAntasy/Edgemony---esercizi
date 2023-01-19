@@ -1,0 +1,33 @@
+#product__form,
+#category__form {
+  display: flex;
+  padding: 10px;
+  border: 1px solid grey;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+}
+
+.product__form__wrapper h2,
+.category__form__wrapper h2 {
+  font-size: 1rem;
+}
+
+.product__form__wrapper,
+.category__form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.forms {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
