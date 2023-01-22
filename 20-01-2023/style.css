@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, rgb(77, 81, 83) 30%, rgb(35, 37, 37) 100%);
+
+}
+
+/* NAVBAR */
+.navbar {
+  display: block;
+  background: linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, rgb(77, 81, 83) 30%, rgb(35, 37, 37) 100%);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.nav__wrapper{
+  width: 55vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 60px;
+}
+
+.btns__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hamburger__btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.hamburger__btn {
+  height: 32px;
+  padding: 0 10px;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  border: 0.1px solid rgba(0, 0, 0, 0.185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #666666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hamburger__btn:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.hamburger__btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.display {
+  opacity: 1 !important;
+}
+
+h2,
+p {
+  padding: 0;
+  margin: 5px;
+  font-size: 0.7rem;
+}
+
+/* FORM */
+
+.form__btn,
+.home__btn {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form__btn:hover,
+.home__btn:hover {
+  background-color: #e9e9e9;
+}
+.form__btn:active .home__btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.form__btn a,
+.home__btn a {
+  color: white;
+}
+.form__btn:hover a,
+.home__btn:hover a {
+  color: black;
+}
+
+
+@media screen and (max-width:1070px) {
+  .filter__cat__price__wrapper,
+  .card__container{
+    margin: 10px 40px !important;
+  }
+  .nav__wrapper{
+    padding:0 40px;
+  }
+}

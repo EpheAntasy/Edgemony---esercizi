@@ -1,0 +1,48 @@
+#product__form,
+#category__form,
+#product__mod__form,
+#product__del__form {
+  display: flex;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product__form__wrapper h2,
+.category__form__wrapper h2,
+.product__mod__form__wrapper h2,
+.product__del__form__wrapper h2 {
+  font-size: 1rem;
+}
+
+.product__form__wrapper,
+.category__form__wrapper,
+.product__mod__form__wrapper,
+.product__del__form__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+}
+
+.cat__del__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.forms {
+  max-width: 1040px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+

@@ -1,0 +1,35 @@
+.hero__img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px rgba(124, 124, 124, 0.253);
+  }
+  
+  .button__wrapper {
+    margin: 20px 0;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .leftBtn {
+    background-color: black;
+  }
+  
+  .leftBtn,
+  .centerBtn,
+  .rightBtn {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  .leftBtn:hover,
+  .centerBtn:hover,
+  .rightBtn:hover {
+    background-color: black;
+  }

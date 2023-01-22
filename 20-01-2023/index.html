@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./components/hero/hero.css" />
+    <link rel="stylesheet" href="./components/cards_cart/card.css">
+    <link rel="stylesheet" href="./components/cards_cart/cart.css">
+</head>
+
+<body>
+    <main>
+        <!-- INIZIO NAVBAR -->
+        <navbar class="navbar">
+            <div class="nav__wrapper">
+                <a href="./"><img class="logo" src="./assets/img/valeshop_logo.svg">
+                </a>
+                <div class="btns__wrapper">
+                    <button class="form__btn"><a href="./form_page.html">Vendi</a></button>
+                    <button class="hamburger__btn"><img class="ham__img"
+                            src="https://cdn-icons-png.flaticon.com/512/2169/2169842.png"></button>
+                </div>
+            </div>
+            </div>
+        </navbar>
+        <!-- FINE NAVBAR -->
+
+        <!--CONTENITORE CARRELLO -->
+        <div class="hamburger__cont"></div>
+
+        <!-- INIZIO CAROSELLO -->
+        <div class="hero">
+            <img class="hero__img" src="./assets/img/1.jpg" alt="">
+        </div>
+        <!-- NAVIGAZIONE CAROSELLO -->
+        <div class="button__wrapper">
+            <button class="leftBtn"></button>
+            <button class="centerBtn"></button>
+            <button class="rightBtn"></button>
+        </div>
+        <!-- FINE CAROSELLO -->
+
+
+        <!-- INIZIO FILTRI -->
+        <div class="filter__cat__price__wrapper">
+            <label for="title">Categoria</label>
+            <select id="cat__selector">
+                <option value="tutti">Tutte le categorie</option>
+            </select>
+            </div>
+        </div>
+        <!-- FINE FILTRI -->
+    </main>
+    <script src=" ./index.js" type="module"></script>
+</body>
+
+</html>

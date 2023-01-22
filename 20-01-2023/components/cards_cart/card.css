@@ -1,0 +1,81 @@
+/* CARD */
+.card__container {
+    margin: 0 auto;
+    max-width: 1040px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 20px;
+    width: 120px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(124, 124, 124, 0.253);
+    box-sizing: content-box;
+    background-size: cover !important;
+    transition: box-shadow 200ms linear;
+  }
+  
+  .card:hover {
+    box-shadow: 3px 3px 3px rgba(31, 31, 31, 0.808);
+  }
+  
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      hsla(195, 4%, 36%, 0.459) 0%,
+      hsla(0, 0%, 0%, 0.7) 70%,
+      hsla(0, 0%, 0%, 0.9) 100%
+    );
+    border-radius: 8px;
+  }
+  
+  .card__title,
+  .card__desc,
+  .card__btn,
+  .cat__name {
+    position: relative;
+  }
+  
+  .card__title {
+    padding-top: 10px;
+    border-top: 1px solid white;
+  }
+  
+  .card__btn {
+    margin: 10px 5px;
+    width: 95%;
+    height: 20px;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+/* FILTRI */
+  .filter__cat__price__wrapper {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #cat__selector {
+    outline: none;
+  }
+  
+  .price__in {
+    width: 40px;
+  }
+  
