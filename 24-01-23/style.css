@@ -1,0 +1,65 @@
+body{
+    background: linear-gradient(180deg, rgb(228, 228, 228) 0%, rgb(143, 143, 145) 20%, rgb(81, 81, 82) 100%);
+
+}
+
+.cards__container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+
+.card__wrapper{
+    padding: 10px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px; 
+    gap: 10px;
+    background-color: #b5c6e0;
+}
+
+.card__wrapper:hover {
+    box-shadow: 0 0 20px black;
+    background-color: #7d899b;
+}
+
+
+.img__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    background-color: white;
+}
+
+.img__wrapper img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.names__wrapper{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+#searchUser {
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}

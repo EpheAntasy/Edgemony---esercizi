@@ -53,8 +53,9 @@ randomBtnEl.textContent = "Genera un nuovo aforisma";
 
 // PASSANDO DIRETTAMENTE L'ENDPOINT COME PARAMETRO RANDOMICO
 // -----------------------------------------------------
+
 const quoteGet = async () => {
-    const res = await fetch(`https://dummyjson.com/quotes/${parseInt(Math.random(1) * 30)}`);
+    const res = await fetch(`https://dummyjson.com/quotes/${parseInt(Math.random(1) * 30 + 1)}`);
     const data = await res.json();
 
     quoteEl.textContent = `"${(data.quote)}"`;
