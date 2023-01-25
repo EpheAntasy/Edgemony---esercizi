@@ -1,3 +1,10 @@
+// ---------------------------------------------
+// Avanzato
+// ---------------------------------------------
+// Creare un grafico a piacere basato su una api 
+// a scelta oppure su un mock costruito ad hoc.
+// ---------------------------------------------
+
 import { cE, qS } from "./utils.js";
 
 const normalPokeEl = qS(".overlay__normal");

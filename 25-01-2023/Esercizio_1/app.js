@@ -1,3 +1,4 @@
+// ---------------------------------------------
 // Esercizio 1
 // ---------------------------------------------
 // Sulla base della lezione del giorno, 
@@ -32,7 +33,6 @@ const quoteGet = () => {
     cardWrapperEl.appendChild(textWrapperEl);
     document.body.append(cardWrapperEl, randomBtnEl);
 }
-
 
 randomBtnEl.onclick = () => {
     textWrapperEl.textContent = ""
