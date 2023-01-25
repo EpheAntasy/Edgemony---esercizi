@@ -1,0 +1,59 @@
+{
+    "aphorisms" : [
+        {
+            "id": 0,
+            "cit": "Il mondo non è un palcoscenico, ma un campo di battaglia.",
+            "auth": "Giuseppe Mazzini"
+        },
+        {
+            "id": 1,
+            "cit": "Considero il mondo per quello che è : un palcoscenico dove ciascuno deve recitare la sua parte.",
+            "auth": "William Shakespeare"
+        },
+        {
+            "id": 2,
+            "cit": "Compi ogni azione come fosse l'ultima della tua vita.",
+            "auth": "Marco Aurelio"
+        },
+        {
+            "id": 3,
+            "cit": "Laddove vi è una grande volontà non possono esserci grandi difficoltà.",
+            "auth": "Niccolò Machiavelli"
+        },
+        {
+            "id": 4,
+            "cit": "Un popolo che ignora il proprio passato non sapra mai nulla del proprio presente.",
+            "auth": "Indro Montanelli"
+        },
+        {
+            "id": 5,
+            "cit": "Non peccano affatto coloro che peccano per amore.",
+            "auth": "Oscar Wilde"
+        },
+        {
+            "id": 6,
+            "cit": "I tuoi occhi mostrano la forza della tua anima.",
+            "auth": "Paulo Coehlo"
+        },
+        {
+            "id": 7,
+            "cit": "Se agirete in base al profitto ne verrete divorati.",
+            "auth": "Confucio"
+        },
+        {
+            "id": 8,
+            "cit": "La vita non è mai giusta, e forse è una buona cosa per la maggior parte di noi che non lo sia.",
+            "auth": "Oscar Wilde"
+        },
+        {
+            "id": 9,
+            "cit": "I mostri sono reali, anche i fantasmi sono reali. Vivono dentro di noi e talvolta vincono.",
+            "auth": "Stephen King"
+        },
+        {
+            "id": 10,
+            "cit": "Alle persone stupide non passa per la testa che il merito e la buona fortuna sono intimamente legate.",
+            "auth": "Goethe"
+        }
+    ]
+}
