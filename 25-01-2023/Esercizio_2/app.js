@@ -46,6 +46,3 @@ fetch("https://api.pokemontcg.io/v2/cards?q=set.id:base1")
     })
 
 const checkType = (type, array) => array.filter(item => item === type)
-
-
-// 69

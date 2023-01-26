@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    background-image: url(./assets/img/poke_bg.jpg);
+    background-size: cover;
+    font-family: 'Comic Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98.2vh;
+  }
+
+  .body__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.473);
+  }
+  
+  body h1 {
+    font-size: 1.8rem;
+    z-index: 11;
+    color: white
+  }
+  
+.wrapper{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.788);
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);}
+
+  .column__wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 10px 40px 70px;
+  }
+  
+  .column {
+    background-color: rgba(240, 248, 255, 0.425);
+    z-index: 11;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    height: 450px;
+    width: 60px;
+    transform: rotate(180deg);
+  }
+
+  .overlay{
+    z-index: 12;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transition: 0.4s linear;  
+    transition-property: width, background-color; 
+    animation: progressAnimation 8s;
+}
+
+@keyframes progressAnimation {
+  30%   { height: 0%}
+}
+
+  .column img{
+    position: absolute;
+    top: -60px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+  }
+  
+  .btn{
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+  }
