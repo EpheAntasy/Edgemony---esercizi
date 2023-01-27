@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input__wrapper {
+    margin-top: 150px;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button,
+input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+
+button {
+    cursor: pointer;
+}
+
+.search__wrapper {
+    padding: 50px;
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgb(255, 255, 255);
+    border-radius: 10%;
+}
