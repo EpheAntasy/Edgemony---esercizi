@@ -1,47 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body{
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-image: url(./assets/img/bg.jpg);
     background-size: cover;
 }
 
-.body__overlay{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.89);
-    width: 100vw;
-    height: 100vh;
-}
-
-h2{
+h2 {
     padding: 10px 20px;
     color: white;
     font-size: 1.8rem;
     font-weight: 400;
 }
 
-.header{
+.header {
     background-color: rgba(73, 73, 73, 0.781);
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.178);
 }
 
-.logo{
+.logo {
     padding: 10px 20px;
     width: 200px;
 }
 
-#popular, #top__rated{
-      display: flex;
-      gap: 10px;
-      padding: 14px;
-      overflow-x: auto;
-    }
+#today,
+#popular,
+#top__rated {
+    display: flex;
+    gap: 10px;
+    padding: 14px;
+    overflow-x: auto;
+}
 
-.card{
+.card {
     cursor: pointer;
     filter: grayscale(0.75);
     transition: all 0.35s;
@@ -55,12 +47,11 @@ h2{
 .card:active {
     transform: scale(0.9);
 }
-  
-.card__img{
+
+.card__img {
     width: 140px;
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.466);
 }
-

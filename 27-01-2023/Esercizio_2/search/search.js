@@ -1,4 +1,4 @@
-import { cE, qS, cardGen } from "./utils.js";
+import { cE, qS, searchCardGen } from "./utils.js";
 
 const searchWrapEl = qS(".search__wrapper");
 const btnEl = qS("#search__btn")
@@ -12,11 +12,12 @@ const searchGet = async (series) => {
 }
 
 btnEl.addEventListener("click", async (e) => {
+    searchWrapEl.textContent = ""
     const inputValue = searchUserInput.value;
     const data = await searchGet(inputValue)
     if (inputValue) {
         let results = data.results.filter(({ name }) => name.toLowerCase() === (inputValue.toLowerCase()))
-        results.forEach(movie => { cardGen(movie, searchWrapEl) })
+        results.forEach(movie => { searchCardGen(movie, searchWrapEl) })
     }
     else {
         alert("No Series inserted")

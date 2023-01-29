@@ -5,30 +5,42 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image: url(../assets/img/bg.jpg);
     background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.body__overlay {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.89);
-    width: 100vw;
-    height: 100vh;
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #666666;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2e2e2e27;
 }
 
 h2 {
-    padding: 10px 20px;
+    margin-left: 65px;
     color: white;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
 .header {
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(73, 73, 73, 0.781);
+    background-color: rgb(73, 73, 73);
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.178);
 }
 
@@ -40,18 +52,51 @@ h2 {
 a {
     margin-right: 20px;
     border: 1px solid gray;
+    border-radius: 10px;
     box-shadow: 1px 1px 6px rgb(255, 255, 255);
     padding: 10px 20px;
     color: white;
     text-decoration: none;
 }
 
+a:hover {
+    background-color: white;
+    color: gray;
+}
+
+#today,
 #popular,
 #top__rated {
     display: flex;
     gap: 10px;
-    padding: 14px;
+    margin-left: 65px;
     overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+#today::-webkit-scrollbar-track,
+#popular::-webkit-scrollbar-track,
+#top__rated::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#today::-webkit-scrollbar,
+#popular::-webkit-scrollbar,
+#top__rated::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #666666;
+}
+
+#today::-webkit-scrollbar-thumb,
+#popular::-webkit-scrollbar-thumb,
+#top__rated::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2e2e2e27;
 }
 
 .card {
@@ -75,4 +120,17 @@ a {
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.466);
+}
+
+.footer__content {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(73, 73, 73);
+}
+
+.footer__content h2 {
+    font-size: 0.8rem;
 }
