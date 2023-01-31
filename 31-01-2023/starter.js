@@ -3,7 +3,7 @@ const os = require('os')
 const fs = require('fs')
 const bios = fs.readFileSync("./bios.html")
 const hobbies = fs.readFileSync("./hobbies.html")
-const img = fs.readFileSync("./assets/img/meWhisky.jpg")
+const img = fs.readFileSync("./assets/img/me_and_my_dog.jpg")
 
 let utente = os.userInfo();
 let piattaforma = os.platform();
@@ -13,13 +13,14 @@ let messaggio = `<!doctype html>
 <head>
 </head>
 <body>
-l'utente <b>${utente.username} </b> 
+<p> L'utente <b>${utente.username} </b> 
 ha avviato l'app il giorno 
-<b>${data.getDay()}/${data.getMonth() + 1}/${data.getFullYear()}</b> usando la piattaforma: ${piattaforma}
+<b>${data.getDay()}/${data.getMonth() + 1}/${data.getFullYear()}</b> usando la piattaforma: <b> ${piattaforma} </b></p>
 <a href=http://localhost:3000/chisono>Vai alla Bio!</a>
 <a href=http://localhost:3000/hobbies>Vai agli Hobbies!</a>
 </body>
 </html>`;
+
 
 const server = http.createServer((req, res) => {
     if (req.url === '/')
