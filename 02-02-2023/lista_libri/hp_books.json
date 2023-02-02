@@ -1,0 +1,43 @@
+[   {
+    "title": "Harry Potter e la pietra filosofale",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 9.99
+    },
+    {
+    "title": "Harry Potter e la camera dei segreti",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 12.99
+    },
+    {
+    "title": "Harry Potter e il prigioniero di Azkaban",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 14.99
+    },
+    {
+    "title": "Harry Potter e il calice di fuoco",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 16.99
+    },
+    {
+    "title": "Harry Potter e l'Ordine della Fenice",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 19.99
+    },
+    {
+    "title": "Harry Potter e il principe mezzosangue",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 21.99
+    },
+    {
+    "title": "Harry Potter e i Doni della Morte",
+    "author": "J.K. Rowling",
+    "genre": "fantasy / avventure",
+    "price": 23.99
+    }
+]
