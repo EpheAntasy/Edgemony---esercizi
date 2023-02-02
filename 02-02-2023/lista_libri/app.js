@@ -13,7 +13,7 @@
 // Ora crea due file html: un per il percorso di root della home page e uno chi-sono
 // Crea ora un server e ricordati che dovrai gestire dei file esterni quindi 
 // aggiungi tutti i moduli nativi di cui hai bisogno e il collegamento alla risorsa JSON
-// Ora il server dovrà impostare 4 percorsi: root, percorso chi-sono, 
+// Ora il server dovrà impostare 3 percorsi: root, percorso chi-sono, 
 // percorso della tua api che puoi chiamare come vuoi
 // Nel percorso api dovrai mostrare i dati del tuo file json
 // Nella pagina home crea un menù con i corretti collegamenti alle tue pagine.
