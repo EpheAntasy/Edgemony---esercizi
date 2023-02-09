@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #CA5460
+}
+
+h2,
+p,
+.top {
+    margin-left: 50px;
+}
+
+.hero {
+    width: 400px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(44, 44, 44, 0.219);
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dog {
+    width: 200px;
+    height: 150px;
+    margin: 10px 0 10px 50px;
+}
+
+.title {
+    font-size: 50px;
+    margin-right: 50px;
+}
+
+form {
+    margin: 20px 50px
+}
