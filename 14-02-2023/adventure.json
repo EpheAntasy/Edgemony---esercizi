@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded56a"
+  },
+  "titolo": "Harry Potter e la pietra filosofale",
+  "autore": "J.K. Rowling",
+  "anno": 1997
+},{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded56b"
+  },
+  "titolo": "Harry Potter e la camera dei segreti",
+  "autore": "J.K. Rowling",
+  "anno": 1998
+},{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded56c"
+  },
+  "titolo": "Harry Potter e il prigioniero di Azkaban",
+  "autore": "J.K. Rowling",
+  "anno": 1999
+},{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded56d"
+  },
+  "titolo": "Harry Potter e il calice di fuoco",
+  "autore": "J.K. Rowling",
+  "anno": 2000
+},{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded56e"
+  },
+  "titolo": "Harry Potter e l'Ordine della Fenice",
+  "autore": "J.K. Rowling",
+  "anno": 2003
+},{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded56f"
+  },
+  "titolo": "Harry Potter e il principe mezzosangue",
+  "autore": "J.K. Rowling",
+  "anno": 2005
+},{
+  "_id": {
+    "$oid": "63eba7e30f009f15f4ded570"
+  },
+  "titolo": "Harry Potter e i doni della morte",
+  "autore": "J.K. Rowling",
+  "anno": 2007
+}]
