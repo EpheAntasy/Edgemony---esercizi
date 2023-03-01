@@ -7,7 +7,7 @@ const ChampCard = () =>{
     return(
         <div className="ChampCard">
             {champions.map((champion) =>(
-            <Card championData={champion} />
+            <Card championData={champion} key={champion.id} />
             ))}
         </div>
     )
