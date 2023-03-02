@@ -1,0 +1,16 @@
+.Slider__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Btn__container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.video {
+    margin-top: 52px;
+}

@@ -1,0 +1,11 @@
+.SliderBtn {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background-color: #47fbfe;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
