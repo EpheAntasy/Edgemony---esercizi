@@ -1,31 +1,35 @@
 .Card {
     display: flex;
-    width: 200px;
-    height: 250px;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid #47fbfe;
-    background-image: url('https://www.teahub.io/photos/full/23-233690_league-of-legends-desktop-background-shadow-isles.jpg');
+    width: 270px;
+    height: 400px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.34);
-    text-align: center;
-    color: white;
-    filter: saturate(0.5);
+    background-size: cover;
+    gap: 20px;
+    border-top-right-radius: 8%;
+    cursor: pointer;
+    transition: all 350ms linear;
 }
 
 .Card:hover {
-    filter: saturate(1.5);
+    border-top-right-radius: 0;
 }
+
+.Card:hover h2 {
+    padding-left: 40px;
+}
+
 
 .Card h2 {
+    display: flex;
+    align-items: center;
     padding: 10px;
-    margin: 0;
-}
-
-.Card img {
-    width: 100px;
+    margin-top: 350px;
+    padding-left: 20px;
+    background-color: #004152;
+    color: white;
+    width: 100%;
+    transition: all 350ms linear;
+    text-transform: uppercase;
 }
 
 .Tags {

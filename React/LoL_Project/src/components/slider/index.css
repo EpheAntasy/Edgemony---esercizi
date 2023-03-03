@@ -12,5 +12,14 @@
 }
 
 .video {
-    margin-top: 52px;
+    margin-top: -33px;
+}
+
+@media screen and (max-width: 650px) {
+
+    .video{
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+    }
 }

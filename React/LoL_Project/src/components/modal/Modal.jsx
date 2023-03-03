@@ -8,7 +8,8 @@ const Modal = ({ isOpen, setIsOpen, data }) => {
     return isOpen && (
         <div className='Modal'>
             <div onClick={closeModal} className='Modal__overlay' />
-            <div className='Modal__container'>
+            <div style={{ backgroundImage: `url('${data.image.full}')`, backgroundSize: 'cover' }} className='Modal__container'>
+                <div className='Modal__int__overlay'></div>
                 <div className='Modal__img__text'>
                     <div className='Modal__text__content'>
                         <h2>{data.name}</h2>
@@ -17,13 +18,12 @@ const Modal = ({ isOpen, setIsOpen, data }) => {
                             {data.tags.map((tag, index) => <span key={index}>{tag}</span>)}
                         </div>
                     </div>
-                    <img src={data.icon} alt={data.name} />
                 </div>
                 <div className='Modal__desc' >
-                    <p>{data.description}</p>
+                    <p>{data.blurb}</p>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

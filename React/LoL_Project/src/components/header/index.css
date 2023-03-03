@@ -1,6 +1,6 @@
 .Header {
     display: flex;
-    background-color: rgb(27, 27, 27);
+    background-color: #F2F2F2;
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -11,6 +11,7 @@
 .Header__left__cont {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .Header img {
@@ -19,6 +20,8 @@
 
 .Header__menu ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     gap: 20px;
 }
@@ -33,9 +36,15 @@
     background-color: rgb(58, 58, 58);
 }
 
+.Header__menu li:hover a {
+    color: white;
+}
+
+
 .Header a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: bold;
     border-radius: 5px;
 }
 

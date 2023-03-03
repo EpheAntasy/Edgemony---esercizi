@@ -4,7 +4,6 @@ import './index.css'
 const Gallery = () => {
     return (
         <div className="Gallery">
-            <h2>Game Mode</h2>
             <div className="Gallery__container">
                 {images.map((image, index) => (
                     <div className="Gallery__items" key={index}>
