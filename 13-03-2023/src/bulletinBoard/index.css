@@ -1,0 +1,32 @@
+.BulletinBoard {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?w=1380&t=st=1678724181~exp=1678724781~hmac=ee42d82f181902eb5bff0ebb913c7cbfd443fe9e4e2cf7f7d296ae6a25e87786');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: white;
+}
+
+.BulletinBoard_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    z-index: -1;
+}
+
+.BulletinBoard_todo {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ToDoContent {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
