@@ -1,0 +1,7 @@
+.Footer {
+  background: linear-gradient(315deg, #7768ff 0%, #e57bff 74%);
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
