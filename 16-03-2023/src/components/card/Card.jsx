@@ -1,24 +1,23 @@
 import { shortDescription } from "../../utils/func";
 import "./index.css";
 
-const Card = ({ productData, setCart }) => {
+const Card = ({ productData, setCart, cart }) => {
 
-// devo sistemare il controllo sui duplicati in quanto risulta sballato
   const onAddCart = () => {
-    setCart((prev) => {
-      let addedCart = [...prev]
-      const findCart = addedCart.find(item => item.id === productData.id)
-      if (findCart) {
-        addedCart = addedCart.map(item => {
-          item.qnty = item.qnty + .5
-          return item
-        })
-      } else {
-        addedCart = [...prev, productData]
-      }
-      localStorage.setItem("cartlist", JSON.stringify(addedCart))
-      return addedCart
-    })
+    let addedCart = [...cart]
+    const findCart = addedCart.find(item => item.id === productData.id)
+    if (findCart) {
+      addedCart = addedCart.map(item => {
+        if (item.id === productData.id) {
+          item.qnty++
+        }
+        return item
+      })
+    } else {
+      addedCart = [...cart, productData]
+    }
+    localStorage.setItem("cartlist", JSON.stringify(addedCart))
+    setCart(addedCart)
   }
 
   return (

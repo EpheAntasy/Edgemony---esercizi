@@ -4,11 +4,11 @@ import Card from "../card/Card";
 import SpinnerLoading from "../spinnerLoading/SpinnerLoading";
 import "./index.css";
 
-const CardList = ({ title, endpoint, setCart }) => {
+const CardList = ({ title, endpoint, setCart, cart }) => {
   const [productsList, setProductsList] = useState([]);
 
   useEffect(() => {
-    GET(endpoint).then((data) => setProductsList(() => data.products.map(product => {
+    GET(endpoint).then((data) => setProductsList(data.products.map(product => {
       product.qnty = 1
       return product
     })));
@@ -20,7 +20,7 @@ const CardList = ({ title, endpoint, setCart }) => {
       <div className="CardList__list">
         {productsList.length ? (
           productsList.map((product) => (
-            <Card setCart={setCart} productData={product} key={product.id} />
+            <Card setCart={setCart} cart={cart} productData={product} key={product.id} />
           ))
         ) : (
           <SpinnerLoading />

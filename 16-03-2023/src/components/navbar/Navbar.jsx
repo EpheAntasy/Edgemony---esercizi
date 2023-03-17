@@ -24,8 +24,7 @@ const Navbar = ({ setValue, setModalCartVisibility, cart }) => {
           <li>Contacts</li>
           <li>About us</li>
         </ul>
-        <p className="cart__qnty">{cart ? cart.reduce((accumulator, currentValue) => accumulator + currentValue.qnty,
-          0) : 0}</p>
+        <p className="cart__qnty">{cart ? cart.reduce((accumulator, currentValue) => accumulator + currentValue.qnty, 0) : 0}</p>
         <img onClick={onHandleCart} className="carrello" src="https://img.icons8.com/3d-fluency/256/shopping-cart-loaded.png" alt="carrello" />
       </div>
       <form onSubmit={onHandleSubmit}>

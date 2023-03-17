@@ -7,15 +7,22 @@ const ModalCart = ({ cart, setCart, modalCartVisible, setModalCartVisibility }) 
     }
 
     const removefromCart = (id) => {
-
-        setCart((prev) => {
-            const filteredCart = prev.filter(item => item.id !== id)
-
-            localStorage.setItem("cartlist", JSON.stringify(filteredCart))
-            return filteredCart
-        })
-
+        let removedCart = [...cart]
+        const findCart = removedCart.find(item => item.id === id)
+        if (findCart?.qnty > 1) {
+            removedCart = removedCart.map(item => {
+                if (item.id === id) {
+                    item.qnty--
+                }
+                return item
+            })
+        } else {
+            removedCart = removedCart.filter(item => item.id !== id)
+        }
+        localStorage.setItem("cartlist", JSON.stringify(removedCart))
+        setCart(removedCart)
     }
+
 
     return modalCartVisible && (
         <div className="ModalCart" >
@@ -29,10 +36,11 @@ const ModalCart = ({ cart, setCart, modalCartVisible, setModalCartVisibility }) 
                     <div className="ModalCart__text-priceCat">
                         <p>{res.price}</p>
                         <p>{res.category}</p>
+                        <p>{res.qnty}</p>
                         {res ? <img onClick={() => removefromCart(res.id)} height={50} src="https://img.icons8.com/nolan/256/empty-trash.png" alt="chiudere" /> : null}
+                        {false}
                     </div>
                 </div>) : <p>Il tuo carrello è vuoto</p>}
-
             </div>
         </div>
     )

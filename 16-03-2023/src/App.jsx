@@ -23,8 +23,8 @@ function App() {
       <Navbar cart={cart} setValue={setValue} setModalCartVisibility={setModalCartVisibility} />
       <Hero />
       <MiniCardList value={value} />
-      <CardList setCart={setCart} title="Technology" endpoint="/products?limit=10" />
-      <CardList setCart={setCart} title="Skincare" endpoint="/products?limit=10&skip=10" />
+      <CardList cart={cart} setCart={setCart} title="Technology" endpoint="/products?limit=10" />
+      <CardList cart={cart} setCart={setCart} title="Skincare" endpoint="/products?limit=10&skip=10" />
       <Footer />
       <ModalCart cart={cart} setCart={setCart} modalCartVisible={modalCartVisible} setModalCartVisibility={setModalCartVisibility} />
     </div>
