@@ -1,0 +1,32 @@
+.ToDoCard{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    flex-wrap: wrap;
+    gap: 20;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    
+    h2{
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .todo{
+        height: 50px;
+        margin-bottom: 60px;
+    }
+
+    .image{
+        background-color: rgb(58, 179, 138);
+        border-radius: 10px;
+        box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    }
+}
